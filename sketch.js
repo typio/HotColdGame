@@ -36,7 +36,8 @@ function draw() {
 
   var colEllipse = (255);
 
-  colEllipse = map(distanceToRect, 0, sqrt(sq(windowWidth) + sq(windowHeight)), 0, 255);
+  rColEllipse = map(distanceToRect, 0, sqrt(sq(windowWidth) + sq(windowHeight)), 255, 0);
+  bColEllipse = map(distanceToRect, 0, sqrt(sq(windowWidth) + sq(windowHeight)), 0, 255);
 
   background(51);
 
@@ -53,7 +54,7 @@ function draw() {
   circle.y = mouseY;
 
   noStroke();
-  fill(colEllipse);
+  fill(rColEllipse, 0, bColEllipse);
   ellipse(circle.x, circle.y, circle.d, circle.d);
 
   distanceToRect = int(dist(circle.x, circle.y, rectangle.x, rectangle.y));
