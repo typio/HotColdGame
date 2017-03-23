@@ -24,8 +24,8 @@ function setup() {
   fill(255);
   text(t, windowWidth/2, 100);
 
-  rectangle.x = random(75, windowWidth - 75/2);
-  rectangle.y = random(75, windowHeight - 79/2);
+  rectangle.x = random(75, windowWidth - rectangle.l/2);
+  rectangle.y = random(75, windowHeight - rectangle.l/2 + 4);
 }
 
 function draw() {
