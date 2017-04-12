@@ -13,7 +13,7 @@ var rectangle = {
 var circle = {
   x : 0,
   y : 0,
-  d : height/120
+  d : height/13.5
 };
 
 var distanceToRect;
